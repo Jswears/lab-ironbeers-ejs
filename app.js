@@ -36,12 +36,12 @@ app.get('/random-beer', (req, res) => {
     .catch(error => console.log('the error is', error));
 });
 
-app.get('beers/:id', (req, res) => {
+app.get('/beers/:id', (req, res) => {
   const beerId = req.params.id;
   punkAPI
     .getBeer(beerId)
     .then(beer => {
-      res.render('random_beer', { beer: beer[0] });
+      res.render('random-beer', { beer: beer[0] });
     })
     .catch(error => console.log('the error is', error));
 });

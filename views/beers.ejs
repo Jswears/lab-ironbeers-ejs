@@ -1,2 +1,5 @@
-<% beersFromApi.forEach((beer) => { %> <%- include('partials/beer.ejs', {beer })
-%> <% }) %>
+<% beersFromApi.forEach((beer) => { %>
+<a href="/beers/<%= beer.id %>">
+  <%- include('partials/beer.ejs', {beer })%>
+</a>
+<% }) %>
