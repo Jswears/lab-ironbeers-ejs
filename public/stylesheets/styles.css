@@ -14,6 +14,14 @@ body {
   flex-direction: column;
 }
 
+h1 {
+  font-size: 3rem;
+}
+
+a {
+  font-size: 1.5rem;
+}
+
 .nav-bar {
   height: 89px;
   background-color: #2081c3;
@@ -51,10 +59,33 @@ body {
   gap: 3rem;
 }
 
-footer {
-  height: 80px;
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 69px;
   background-color: #0a2c42;
   color: #f7f9f9;
   font-size: 1.6rem;
-  padding: 1.2rem 0 0 1.2rem;
+}
+
+#main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#beer-section a {
+  text-decoration: none;
 }

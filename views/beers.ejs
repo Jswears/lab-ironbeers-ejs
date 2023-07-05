@@ -1,5 +1,10 @@
-<% beersFromApi.forEach((beer) => { %>
-<a href="/beers/<%= beer.id %>">
-  <%- include('partials/beer.ejs', {beer })%>
-</a>
-<% }) %>
+<h1>All the Beers</h1>
+<div>
+  <% beersFromApi.forEach((beer) => { %>
+  <div>
+    <a href="/beers/<%= beer.id %>">
+      <%- include('partials/beer.ejs', {beer })%>
+    </a>
+  </div>
+  <% }) %>
+</div>

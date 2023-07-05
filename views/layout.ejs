@@ -8,16 +8,21 @@
     <link rel="stylesheet" href="/stylesheets/styles.css" />
   </head>
   <body>
-    <nav class="nav-bar">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/beers">Beers</a></li>
-        <li><a href="/random-beer">Random Beer</a></li>
-      </ul>
-    </nav>
-    <%- body %>
-    <footer>
-      <p>Develop by Joaquin;)</p>
-    </footer>
+    <div id="page-container">
+      <div id="content-wrap">
+        <nav class="nav-bar">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/beers">Beers</a></li>
+            <li><a href="/random-beer">Random Beer</a></li>
+          </ul>
+        </nav>
+        <%- body %>
+      </div>
+
+      <footer id="footer">
+        <p>Develop by Joaquin;)</p>
+      </footer>
+    </div>
   </body>
 </html>

@@ -31,6 +31,7 @@ app.get('/random-beer', (req, res) => {
   punkAPI
     .getRandom()
     .then(beer => {
+      //We get beer[0], because beer is an array, and if you call it without the index, it's going to send
       res.render('random-beer', { beer: beer[0] });
     })
     .catch(error => console.log('the error is', error));
@@ -41,7 +42,7 @@ app.get('/beers/:id', (req, res) => {
   punkAPI
     .getBeer(beerId)
     .then(beer => {
-      res.render('random-beer', { beer: beer[0] });
+      res.render('foundBeer', { beer: beer[0] });
     })
     .catch(error => console.log('the error is', error));
 });
